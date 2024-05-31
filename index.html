@@ -80,17 +80,53 @@
             
             function getNextVid() {
                 i++;
-                $newIFrame.setAttribute("src", vids[i]);
+                $newIFrame1.setAttribute("src", vids[i]);
+                i++;
+                $newIFrame2.setAttribute("src", vids[i]);
+                i++;
+                $newIFrame3.setAttribute("src", vids[i]);
+                i++;
+                $newIFrame4.setAttribute("src", vids[i]);
+                i++;
+                $newIFrame5.setAttribute("src", vids[i]);
             }
 
 
 
             
-            var $newIFrame = document.createElement("iframe");
-            $newIFrame.setAttribute("src", vids[i]);
-            $newIFrame.style.width = "720px";
-            $newIFrame.style.height = "480px";
-            document.body.prepend($newIFrame);
+            var $newIFrame1 = document.createElement("iframe");
+            $newIFrame1.setAttribute("src", vids[i]);
+            $newIFrame1.style.width = "720px";
+            $newIFrame1.style.height = "480px";
+            document.body.prepend($newIFrame1);
+  
+            var $newIFrame2 = document.createElement("iframe");
+            i++;
+            $newIFrame2.setAttribute("src", vids[i]);
+            $newIFrame2.style.width = "720px";
+            $newIFrame2.style.height = "480px";
+            document.body.prepend($newIFrame2);
+
+            var $newIFrame3 = document.createElement("iframe");
+            i++;
+            $newIFrame3.setAttribute("src", vids[i]);
+            $newIFrame3.style.width = "720px";
+            $newIFrame3.style.height = "480px";
+            document.body.prepend($newIFrame3);
+
+            var $newIFrame4 = document.createElement("iframe");
+            i++;
+            $newIFrame4.setAttribute("src", vids[i]);
+            $newIFrame4.style.width = "720px";
+            $newIFrame4.style.height = "480px";
+            document.body.prepend($newIFrame4);
+
+            var $newIFrame5 = document.createElement("iframe");
+            i++;
+            $newIFrame5.setAttribute("src", vids[i]);
+            $newIFrame5.style.width = "720px";
+            $newIFrame5.style.height = "480px";
+            document.body.prepend($newIFrame5);
           </script>
           <button type="button" onclick="getNextVid()">NEXT</button>
           
