@@ -1,5 +1,6 @@
 
 function getNextVid() { 
+        x = ""
         
  return x = '<script>
         var $newIFrame = document.createElement("iframe");
