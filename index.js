@@ -1,3 +1,3 @@
 function getNextVid() { 
- return x+1; 
+ return "https://spankbang.com/3wlb5/embed/"; 
 }
