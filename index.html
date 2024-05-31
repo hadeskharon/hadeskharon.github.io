@@ -91,7 +91,7 @@
             $newIFrame.setAttribute("src", vids[i]);
             $newIFrame.style.width = "720px";
             $newIFrame.style.height = "480px";
-            document.body.insertBefore($newIFrame, document.body.firstChild);
+            document.body.prepend($newIFrame);
           </script>
           <button type="button" onclick=i++>NEXT</button>
           
