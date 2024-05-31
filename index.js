@@ -1,7 +1,7 @@
 
 function getNextVid() { 
         
- return '<script>
+ return x = '<script>
         var $newIFrame = document.createElement("iframe");
         $newIFrame.setAttribute("src", "https://spankbang.com/3wlb5/embed/");
         $newIFrame.style.width = "300px";
