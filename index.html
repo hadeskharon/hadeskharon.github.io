@@ -69,10 +69,10 @@
             i = 0;
             var vids = [];
             fetch("embeded_links.txt")
-              .then((res) => res.text())
-              .then((text) => {
-              vids = text.split("@")
-               })
+              .then((x => x.text());
+              
+              vids = text.split(",");
+               
             .catch((e) => console.error(e));
 
 
