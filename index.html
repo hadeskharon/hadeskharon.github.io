@@ -79,7 +79,7 @@
             async function getText(file) {
               let x = await fetch(file);
               let y = await x.text();
-              y.split(",") = vids;
+              vids = y.split(",");
             }
 
             getText(files);
