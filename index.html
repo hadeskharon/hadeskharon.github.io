@@ -69,13 +69,13 @@
            
             i = 0;
             var files = "embeded_links.txt"
-            const vids = [];
+            
 
 
             fetch(files)
             .then(response => response.text())
             .then((data) => {
-            vids = data.split(",")
+            const vids = data.split(",")
             })
              /*
             fetch(file)
