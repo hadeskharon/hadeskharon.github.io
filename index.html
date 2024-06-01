@@ -68,7 +68,7 @@
           <script>
            
             i = 0;
-            var file = "embeded_links.txt"
+            var files = "embeded_links.txt"
             var vids = [];
              /*
             fetch(file)
@@ -76,12 +76,13 @@
             vids = x.split(",");
             */
 
-            async function getText() {
+            async function getText(file) {
               let x = await fetch(file);
               let y = await x.text();
               y.split(",") = vids;
             }
-               
+
+            getText(files);
 
             /*
             const vids = [
