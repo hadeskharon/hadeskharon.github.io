@@ -70,11 +70,18 @@
             i = 0;
             var files = "embeded_links.txt"
             var vids = [];
+
+
+            fetch(files)
+            .then(response => response.text())
+            .then((data) => {
+            vids = data.split(",")
+            })
              /*
             fetch(file)
             .then((x => x.text()));
             vids = x.split(",");
-            */
+            
 
             async function getText(file) {
               let x = await fetch(file);
@@ -83,7 +90,7 @@
             }
 
             getText(files);
-
+            */
             /*
             const vids = [
 "https://spankbang.com/3wlb5/embed/" , "https://spankbang.com/7wb41/embed/" , "https://spankbang.com/8oilf/embed/" , "https://spankbang.com/90mpb/embed/" , "https://spankbang.com/8qgfd/embed/" ,
