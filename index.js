@@ -1,4 +1,4 @@
-import static JavaManifestFormatter.JavaManifestFormatter.versionFilePath;
+import JavaManifestFormatter.JavaManifestFormatter.versionFilePath;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
