@@ -40,6 +40,6 @@ const vids = [
 "https://spankbang.com/7a56k/embed/" ,
 "https://spankbang.com/86ked/embed/" ,
 "https://spankbang.com/6f0t0/embed/"
-]:
+];
 
 export {vids}
