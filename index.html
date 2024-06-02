@@ -62,24 +62,27 @@
       <link rel="stylesheet" href="style.css" />
     
       <link href="index.css" rel="stylesheet" />
+     
 
       
           
-          <script>
+          <script src="index.js">
 
            
-            var url = '/embededLinks.txt';
-            var storedText;
+           String[] inputLine = new String[500];
+           int counter = 0;
 
-            fetch(url)
-            .then(function(response) {
-              response.text().then(function(text) {
-                  storedText = text;
-      
-              });
-            });
+           try {
+             URL targetUrl = new URL (versionFilePath); 
+          
+             BufferedReader read = new BufferedReader(new InputStreamReader(targetUrl.openStream()));
 
-           var vids = storedText.split(",");
+             while ((inputLine[counter] = read.readLine()) != null){
+                System.out.println("# " + counter + "  " + inputLine[counter]);
+                counter++;
+             }
+        
+            wread.close();
 
 
             
