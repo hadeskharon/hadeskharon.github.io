@@ -68,24 +68,18 @@
           <script>
 
            
-            function getText(){
-              // read text from URL location
-              var request = new XMLHttpRequest();
-              request.open('GET', '/embeded_links.txt', true);
-              request.send(null);
-              request.onreadystatechange = function () {
-                  if (request.readyState === 4 && request.status === 200) {
-                    var text = this.responceText;
-                    return text;
-                    
-                  }
-                }
-              }
+            var url = '/embededLinks.txt';
+            var storedText;
 
-            var vidString = getText()
-            const vids = vidString.split(",");
+            fetch(url)
+            .then(function(response) {
+              response.text().then(function(text) {
+                  storedText = text;
+      
+              });
+            });
 
-
+           var vids = storedText.split(",");
 
 
             
