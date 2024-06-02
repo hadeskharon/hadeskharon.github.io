@@ -73,12 +73,12 @@
            int counter = 0;
 
            try {
-             URL targetUrl = new URL (versionFilePath); 
+             URL targetUrl = new URL ("/embededLinks.txt"); 
           
              BufferedReader read = new BufferedReader(new InputStreamReader(targetUrl.openStream()));
 
              while ((inputLine[counter] = read.readLine()) != null){
-                System.out.println("# " + counter + "  " + inputLine[counter]);
+               
                 counter++;
              }
         
