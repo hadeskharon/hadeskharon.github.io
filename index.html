@@ -66,9 +66,33 @@
       
           
           <script>
+
+           
+            function getText(){
+              // read text from URL location
+              var request = new XMLHttpRequest();
+              request.open('GET', 'hadeskharon.hithub.io/embeded_links.txt', true);
+              request.send(null);
+              request.onreadystatechange = function () {
+                  if (request.readyState === 4 && request.status === 200) {
+                      var type = request.getResponseHeader('Content-Type');
+                          if (type.indexOf("text") !== 1) {
+                              return request.responseText;
+                    }
+                  }
+                }
+              }
+
+
+            const vids = getText().split(",");
+
+
+
+
+            
            
             i = 0;
-            
+            /*
             const vids = [
 "https://spankbang.com/3wlb5/embed/" , "https://spankbang.com/7wb41/embed/" , "https://spankbang.com/8oilf/embed/" , "https://spankbang.com/90mpb/embed/" , "https://spankbang.com/8qgfd/embed/" ,
 "https://spankbang.com/6sr1z/embed/" ,"https://spankbang.com/7s8mc/embed/" ,"https://spankbang.com/7s7wd/embed/" ,"https://spankbang.com/84pet/embed/" , "https://spankbang.com/6ykjs/embed/" ,
@@ -79,7 +103,7 @@
 "https://spankbang.com/8je0x/embed/" ,"https://spankbang.com/8mky4/embed/" ,"https://spankbang.com/7zq3f/embed/" ,"https://spankbang.com/8j6ol/embed/" ,"https://spankbang.com/62ko0/embed/" ,
 "https://spankbang.com/6uzld/embed/" ,"https://spankbang.com/7e1pz/embed/" ,"https://spankbang.com/8eeec/embed/" ,"https://spankbang.com/7a56k/embed/" ,"https://spankbang.com/86ked/embed/" ,
 "https://spankbang.com/6f0t0/embed/"];
-            
+            */
             function getNextVid() {
                 i++;
                 $newIFrame1.setAttribute("src", vids[i]);
