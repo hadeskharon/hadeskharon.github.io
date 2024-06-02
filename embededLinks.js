@@ -1,3 +1,4 @@
+const links = [
 "https://spankbang.com/3wlb5/embed/" , 
 "https://spankbang.com/7wb41/embed/" , 
 "https://spankbang.com/8oilf/embed/" , 
@@ -39,3 +40,6 @@
 "https://spankbang.com/7a56k/embed/" ,
 "https://spankbang.com/86ked/embed/" ,
 "https://spankbang.com/6f0t0/embed/"
+]:
+
+export {links}
