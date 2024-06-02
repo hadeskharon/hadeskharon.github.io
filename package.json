@@ -2,6 +2,7 @@
   "name": "Moist-Holes",
   "version": "1.0.0",
   "private": true,
+  "type": "module",
   "dependencies": {
     "parcel-bundler": "^1.6.1"
   },
