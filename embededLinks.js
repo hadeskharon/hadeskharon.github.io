@@ -1,4 +1,4 @@
-const links = [
+const vids = [
 "https://spankbang.com/3wlb5/embed/" , 
 "https://spankbang.com/7wb41/embed/" , 
 "https://spankbang.com/8oilf/embed/" , 
@@ -42,4 +42,4 @@ const links = [
 "https://spankbang.com/6f0t0/embed/"
 ]:
 
-export {links}
+export {vids}
